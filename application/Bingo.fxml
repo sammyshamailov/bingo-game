@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="anchorPane" fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Button id="next" fx:id="next" alignment="CENTER" contentDisplay="CENTER" layoutX="446.0" layoutY="31.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextNumber" text="Next" textAlignment="CENTER" AnchorPane.leftAnchor="460.0" />
+      <TextField id="curNum" fx:id="curNum" alignment="CENTER" editable="false" layoutX="526.0" layoutY="31.0" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.leftAnchor="530.0" AnchorPane.rightAnchor="530.0">
+         <effect>
+            <Glow />
+         </effect></TextField>
+      <Button id="finish" fx:id="finish" alignment="CENTER" contentDisplay="CENTER" layoutX="714.0" layoutY="31.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#finishGame" text="Finish" AnchorPane.rightAnchor="455.0" />
+      <FlowPane id="flowPane" fx:id="child" alignment="CENTER" columnHalignment="CENTER" hgap="5.0" layoutX="2.0" layoutY="88.0" maxHeight="1000.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" prefHeight="312.0" prefWidth="600.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="88.0">
+         <effect>
+            <DropShadow />
+         </effect></FlowPane>
+   </children>
+</AnchorPane>
